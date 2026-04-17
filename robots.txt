@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.xindus.net/sitemap.xml
