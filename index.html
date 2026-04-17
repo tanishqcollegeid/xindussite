@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<meta name="theme-color" content="#1e2d52"/>
-<title>Xindus — Air Freight, Courier & Ocean Logistics from India</title>
-<meta name="description" content="Tech-powered air freight, courier and ocean logistics from New Delhi. Direct to USA, UK, Australia, Canada. 200+ countries via India Post."/>
+<meta name="theme-color" content="#050e20"/>
+<title>Air-Ocean Freight India to USA — Xindus</title>
+<meta name="description" content="Ship bulk cargo from India to USA via Korea. Air freight to Korea, then ocean to USA. 20-25 business days. From ₹320/kg. Minimum 1,000 kg."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -97,211 +97,170 @@ footer{background:#141e34;padding:72px 5% 36px}
 @media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:32px}}
 
 
-/* HERO */
-#hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(158deg,#09122a 0%,var(--navy) 50%,#1e3575 100%);padding:100px 5% 80px;position:relative;overflow:hidden}
-.hero-glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
-.hg1{width:700px;height:700px;background:#1e3070;top:-200px;right:-150px;opacity:.5}
-.hg2{width:400px;height:400px;background:rgba(244,154,34,.1);bottom:-100px;left:-80px;opacity:.6}
-.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1px);background-size:28px 28px}
-.hero-inner{position:relative;z-index:1;max-width:1160px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
-.hero-eye{font-size:.68rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:16px;display:flex;align-items:center;gap:10px}
-.hero-eye::before{content:'';width:24px;height:1.5px;background:var(--amber)}
-.hero-h1{font-family:var(--display);font-size:clamp(3rem,5.5vw,4.5rem);font-weight:300;color:#fff;line-height:1.08;letter-spacing:-.03em;margin-bottom:20px}
-.hero-h1 em{font-style:italic;color:rgba(245,184,74,.88)}
-.hero-p{font-size:.97rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.85;margin-bottom:34px;max-width:480px}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px}
-.hero-stats{display:flex;gap:0}
-.h-stat{padding:18px 24px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);flex:1}
-.h-stat:first-child{border-radius:var(--r) 0 0 var(--r)}
-.h-stat:last-child{border-radius:0 var(--r) var(--r) 0;border-left:none}
-.h-stat:not(:first-child):not(:last-child){border-left:none}
-.h-num{font-family:var(--display);font-size:1.8rem;font-weight:400;color:#fff}
-.h-lbl{font-size:.68rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;margin-top:3px}
+/* ── HERO ── */
+.ao-hero {
+  min-height: 100svh;
+  background: linear-gradient(150deg, #050e20 0%, #0c1e3d 40%, #0e2a1a 100%);
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 110px 5% 80px; position: relative; overflow: hidden;
+}
+.ao-hero-glow {position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none;}
+.aog1{width:700px;height:700px;background:rgba(20,80,40,.5);top:-200px;right:-150px;}
+.aog2{width:500px;height:500px;background:rgba(30,50,120,.4);bottom:-150px;left:-100px;}
+.aog3{width:300px;height:300px;background:rgba(244,154,34,.08);top:40%;left:30%;}
+.ao-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.03) 1px,transparent 1px);background-size:32px 32px;}
+.ao-hero-inner{position:relative;z-index:1;max-width:1160px;margin:0 auto;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center;}
 
-/* COVERAGE CARD */
-.cov-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-lg);padding:28px;backdrop-filter:blur(14px)}
-.cov-card-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
-.cov-card-icon{font-size:1.6rem}
-.cov-card-title{font-family:var(--display);font-size:1.1rem;font-weight:500;color:#fff}
-.cov-card-sub{font-size:.75rem;color:rgba(255,255,255,.45);margin-top:2px}
-.cov-sl{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:10px}
-.cov-countries{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.cov-country{display:flex;align-items:center;gap:10px;padding:8px 12px;background:rgba(255,255,255,.05);border-radius:8px}
-.cov-flag{font-size:1.1rem}
-.cov-name{font-size:.84rem;font-weight:500;color:rgba(255,255,255,.85);flex:1}
-.cov-badge{font-size:.62rem;font-weight:700;padding:3px 10px;border-radius:99px}
-.own-badge{background:rgba(22,163,74,.2);color:#4ade80;border:1px solid rgba(74,222,128,.25)}
-.cov-divider{height:1px;background:rgba(255,255,255,.08);margin:14px 0}
-.cov-partner{display:flex;flex-wrap:wrap;gap:6px}
-.cov-ptag{font-size:.72rem;font-weight:600;padding:4px 12px;border-radius:99px;background:rgba(244,154,34,.15);border:1px solid rgba(244,154,34,.25);color:rgba(245,184,74,.9)}
+.ao-eye{font-size:.67rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+.ao-eye::before{content:'';width:28px;height:1.5px;background:linear-gradient(90deg,var(--amber),#4ade80);}
+.ao-h1{font-family:var(--display);font-size:clamp(3rem,5.5vw,4.6rem);font-weight:300;color:#fff;line-height:1.06;letter-spacing:-.03em;margin-bottom:20px;}
+.ao-h1 em{font-style:italic;color:rgba(245,184,74,.88);}
+.ao-h1 .green-em{font-style:italic;color:rgba(74,222,128,.85);}
+.ao-p{font-size:.96rem;font-weight:300;color:rgba(255,255,255,.58);line-height:1.85;margin-bottom:32px;max-width:500px;}
+.ao-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:44px;}
 
-/* TRUST STRIP */
-#trust{padding:24px 5%;background:var(--navy);border-top:1px solid rgba(255,255,255,.06)}
-.trust-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
-.ti{font-size:.78rem;font-weight:500;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:8px}
-.ti-sep{width:1px;height:18px;background:rgba(255,255,255,.1)}
+/* HERO STATS ROW */
+.ao-stats{display:flex;gap:0;}
+.ao-stat{padding:18px 22px;flex:1;position:relative;}
+.ao-stat::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:rgba(255,255,255,.1);}
+.ao-stat:last-child::after{display:none;}
+.ao-stat-bg{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);}
+.ao-sn{font-family:var(--display);font-size:2rem;font-weight:400;color:#fff;line-height:1;}
+.ao-sn sup{font-size:1rem;color:var(--amber);}
+.ao-sl{font-size:.67rem;color:rgba(255,255,255,.42);text-transform:uppercase;letter-spacing:.08em;margin-top:4px;}
 
-/* ABOUT */
-#about{padding:130px 5%;background:var(--white)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center}
-.about-img-block{position:relative}
-.about-main-card{background:linear-gradient(148deg,var(--navy) 0%,#1e3575 100%);border-radius:var(--r-xl);padding:44px;box-shadow:var(--sh-lg)}
-.about-main-card h3{font-family:var(--display);font-size:1.8rem;font-weight:400;color:#fff;margin-bottom:14px;line-height:1.25}
-.about-main-card p{font-size:.9rem;font-weight:300;color:rgba(255,255,255,.7);line-height:1.85}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
-.a-stat{background:rgba(255,255,255,.07);border-radius:var(--r);padding:16px}
-.a-num{font-family:var(--display);font-size:1.6rem;font-weight:400;color:#fff}
-.a-lbl{font-size:.7rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.07em;margin-top:3px}
-.about-accent{position:absolute;bottom:-20px;right:-20px;background:var(--amber);border-radius:var(--r-lg);padding:20px 26px;box-shadow:0 8px 32px rgba(244,154,34,.3)}
-.about-accent-n{font-family:var(--display);font-size:2rem;font-weight:400;color:#fff;line-height:1}
-.about-accent-l{font-size:.72rem;color:rgba(255,255,255,.75);text-transform:uppercase;letter-spacing:.07em;margin-top:4px}
+/* ROUTE CARD */
+.ao-route-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-xl);padding:32px;backdrop-filter:blur(16px);}
+.ao-route-title{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px;display:flex;align-items:center;gap:8px;}
+.ao-route-title::before{content:'';flex:1;height:1px;background:rgba(255,255,255,.08);}
+.ao-route-title::after{content:'';flex:1;height:1px;background:rgba(255,255,255,.08);}
+.ao-route-steps{display:flex;flex-direction:column;gap:0;}
+.ao-rs{display:flex;align-items:flex-start;gap:16px;padding:16px 0;position:relative;}
+.ao-rs:not(:last-child){border-bottom:1px solid rgba(255,255,255,.06);}
+.ao-rs-icon-wrap{display:flex;flex-direction:column;align-items:center;gap:0;flex-shrink:0;}
+.ao-rs-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;}
+.ao-rs-icon.air{background:rgba(33,66,149,.3);border:1px solid rgba(33,66,149,.5);}
+.ao-rs-icon.hub{background:rgba(244,154,34,.2);border:1px solid rgba(244,154,34,.4);}
+.ao-rs-icon.sea{background:rgba(16,80,50,.4);border:1px solid rgba(74,222,128,.3);}
+.ao-rs-icon.dest{background:rgba(74,222,128,.15);border:1px solid rgba(74,222,128,.3);}
+.ao-rs-line{width:2px;flex:1;min-height:20px;background:rgba(255,255,255,.06);}
+.ao-rs-content{flex:1;padding-top:10px;}
+.ao-rs-label{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:4px;}
+.ao-rs-place{font-family:var(--display);font-size:1.05rem;font-weight:500;color:#fff;margin-bottom:3px;}
+.ao-rs-detail{font-size:.78rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.55;}
+.ao-rs-time{display:inline-flex;align-items:center;gap:5px;font-size:.7rem;font-weight:700;padding:3px 10px;border-radius:99px;margin-top:6px;}
+.time-air{background:rgba(33,66,149,.25);color:rgba(140,170,255,.9);border:1px solid rgba(33,66,149,.4);}
+.time-hub{background:rgba(244,154,34,.15);color:rgba(245,184,74,.9);border:1px solid rgba(244,154,34,.3);}
+.time-sea{background:rgba(16,80,50,.3);color:rgba(74,222,128,.9);border:1px solid rgba(74,222,128,.25);}
 
-/* SERVICES */
-#services{padding:130px 5%;background:var(--cream2)}
-.svc-note{text-align:center;font-size:.86rem;color:var(--ink-l);background:var(--white);border:1px solid var(--linen);border-radius:var(--r);padding:12px 20px;margin-bottom:40px;max-width:600px;margin-inline:auto}
-.svc-note strong{color:var(--navy)}
-.svc-country-block{margin-bottom:40px}
-.scb-header{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:14px;border-bottom:2px solid var(--linen)}
-.scb-flag{font-size:1.6rem}
-.scb-title{font-family:var(--display);font-size:1.2rem;font-weight:500;color:var(--navy);flex:1}
-.scb-tag{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:4px 12px;border-radius:99px;background:rgba(22,163,74,.1);color:#15803d;border:1px solid rgba(22,163,74,.25)}
-.scb-tag-partner{background:var(--amber-lt);color:#92400e;border-color:rgba(244,154,34,.3)}
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.svc-card{background:var(--white);border-radius:var(--r-lg);padding:28px;border:1px solid var(--cream3);box-shadow:var(--sh);transition:var(--t)}
-.svc-card:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:transparent}
-.svc-ico{font-size:2rem;margin-bottom:14px}
-.svc-tag{display:inline-block;font-size:.64rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:99px;margin-bottom:10px}
-.svc-tag-lite{background:rgba(33,66,149,.08);color:#214295;border:1px solid rgba(33,66,149,.18)}
-.svc-tag-premium{background:var(--amber-lt);color:#92400e;border:1px solid rgba(244,154,34,.3)}
-.svc-card h3{font-family:var(--display);font-size:1.1rem;font-weight:500;color:var(--navy);margin-bottom:8px}
-.svc-card p{font-size:.84rem;font-weight:300;color:var(--ink-l);line-height:1.7;margin-bottom:14px}
-.svc-meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-.svc-meta-item{font-size:.72rem;color:var(--ink-l);font-weight:500;background:var(--cream2);border:1px solid var(--linen);padding:3px 10px;border-radius:99px}
-.svc-link{font-size:.8rem;font-weight:700;color:var(--navy);display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
-.svc-link:hover{gap:8px;color:var(--amber)}
+.ao-total-badge{margin-top:20px;padding:14px 18px;background:linear-gradient(135deg,rgba(74,222,128,.1),rgba(33,66,149,.15));border:1px solid rgba(74,222,128,.2);border-radius:var(--r);display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.ao-total-label{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);}
+.ao-total-val{font-family:var(--display);font-size:1.6rem;font-weight:400;color:#fff;}
+.ao-total-val span{font-size:1rem;color:rgba(74,222,128,.9);}
 
-/* HOW IT WORKS */
-#how{padding:130px 5%;background:var(--white)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr)}
-.step{padding:36px 28px;border:1px solid var(--cream3);background:var(--cream);position:relative}
-.step:not(:first-child){border-left:none}
-.step-n{font-family:var(--display);font-size:3.5rem;font-weight:300;color:var(--cream3);line-height:1;margin-bottom:16px}
-.step h4{font-family:var(--display);font-size:1.05rem;font-weight:500;color:var(--navy);margin-bottom:8px}
-.step p{font-size:.82rem;font-weight:300;color:var(--ink-l);line-height:1.7}
-.step:first-child{border-radius:var(--r-lg) 0 0 var(--r-lg)}
-.step:last-child{border-radius:0 var(--r-lg) var(--r-lg) 0}
+/* ── SECTIONS ── */
+.ao-section{padding:100px 5%;}
+.ao-section.dark{background:linear-gradient(160deg,#060f1f 0%,#0a1a0f 100%);}
+.ao-section.cream{background:var(--cream2);}
+.ao-section.white{background:var(--white);}
 
-/* OCEAN */
-#ocean{padding:130px 5%;background:var(--cream2)}
-.ocean-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.ocean-features{display:flex;flex-direction:column;gap:18px;margin-top:24px}
-.ocean-feat{display:flex;gap:14px;align-items:flex-start}
-.of-ico{width:42px;height:42px;border-radius:10px;background:var(--cream);border:1px solid var(--linen);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-.of-title{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:3px}
-.of-desc{font-size:.82rem;font-weight:300;color:var(--ink-l);line-height:1.65}
-.ocean-card{background:linear-gradient(148deg,var(--navy) 0%,#1e3575 100%);border-radius:var(--r-xl);padding:36px;box-shadow:var(--sh-lg)}
-.ocean-card-icon{font-size:2.6rem;margin-bottom:14px}
-.ocean-card-title{font-family:var(--display);font-size:1.35rem;font-weight:400;color:#fff;margin-bottom:5px}
-.ocean-card-sub{font-size:.8rem;font-weight:300;color:rgba(255,255,255,.5);margin-bottom:22px}
-.ocean-routes{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
-.ocean-route{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border-radius:var(--r);padding:10px 14px}
-.or-port,.or-dest{font-size:.8rem;font-weight:600;color:rgba(255,255,255,.8);flex:1}
-.or-dest{text-align:right}
-.or-arr{color:var(--amber);flex-shrink:0}
-.ocean-badges{display:flex;flex-wrap:wrap;gap:6px}
-.o-badge{font-size:.7rem;font-weight:600;color:rgba(255,255,255,.65);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:4px 12px;border-radius:99px}
-.ocean-stats{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
-.o-stat{flex:1;background:var(--white);border-radius:var(--r);padding:16px 18px;text-align:center;border:1px solid var(--linen)}
-.o-stat-n{font-family:var(--display);font-size:1.8rem;font-weight:400;color:var(--navy)}
-.o-stat-l{font-size:.68rem;color:var(--ink-l);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+/* WHY SECTION */
+.ao-why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+.ao-why-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r-lg);padding:28px;transition:var(--t);}
+.ao-why-card:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14);}
+.ao-why-ico{font-size:2.2rem;margin-bottom:16px;}
+.ao-why-card h4{font-family:var(--display);font-size:1.1rem;font-weight:500;color:#fff;margin-bottom:8px;}
+.ao-why-card p{font-size:.83rem;font-weight:300;color:rgba(255,255,255,.58);line-height:1.7;}
 
-/* WEBINAR */
-#webinar{padding:0 5%;background:var(--navy);overflow:hidden;position:relative}
-#webinar::before{content:'';position:absolute;width:700px;height:700px;border-radius:50%;background:rgba(46,64,112,.4);top:-250px;left:-120px;filter:blur(90px);pointer-events:none}
-.webinar-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:flex-start;padding:100px 0;position:relative;z-index:1}
-.wb-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(244,154,34,.15);border:1px solid rgba(244,154,34,.35);color:#f5b84a;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:99px;margin-bottom:16px}
-.wb-h2{font-family:var(--display);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;color:#fff;line-height:1.2;letter-spacing:-.015em;margin-bottom:16px}
-.wb-h2 em{font-style:italic;color:rgba(245,184,74,.85);font-weight:300}
-.wb-p{font-size:.92rem;font-weight:300;color:rgba(255,255,255,.65);line-height:1.85;margin-bottom:24px}
-.wb-topics{display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
-.wb-topic{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;font-weight:400;color:rgba(255,255,255,.75);line-height:1.6}
-.wb-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0;margin-top:6px}
-.wb-meta{display:flex;flex-direction:column;gap:8px}
-.wb-meta-item{font-size:.85rem;font-weight:400;color:rgba(255,255,255,.65)}
-.wb-meta-item strong{color:rgba(255,255,255,.9);font-weight:600}
-.wb-form-card{background:var(--white);border-radius:var(--r-xl);padding:36px 32px;box-shadow:var(--sh-lg)}
-.wb-form-title{font-family:var(--display);font-size:1.5rem;font-weight:500;color:var(--navy);margin-bottom:4px}
-.wb-form-sub{font-size:.8rem;color:var(--ink-l);font-weight:300;margin-bottom:24px}
-.wb-form{display:flex;flex-direction:column;gap:14px}
-.fg{display:flex;flex-direction:column;gap:5px}
-.fg label{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--navy-m)}
-.fg input,.fg select,.fg textarea{padding:11px 14px;border:1.5px solid var(--linen);border-radius:var(--r);font-family:var(--body);font-size:.88rem;color:var(--ink);background:var(--cream2);width:100%;transition:border .2s,box-shadow .2s;appearance:none;resize:vertical}
-.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--navy2);box-shadow:0 0 0 3px rgba(46,64,112,.08);background:var(--white)}
-.fg input::placeholder,.fg textarea::placeholder{color:#b8c0ce;font-weight:300}
-.wb-privacy{font-size:.72rem;color:var(--ink-l);font-weight:300;text-align:center;margin-top:4px}
-.wb-success{text-align:center;padding:20px 10px;display:none}
-.wb-success-ico{font-size:3rem;margin-bottom:12px}
-.wb-success-h{font-family:var(--display);font-size:1.5rem;font-weight:400;color:var(--navy);margin-bottom:8px}
-.wb-success-p{font-size:.86rem;font-weight:300;color:var(--ink-l);line-height:1.7}
+/* ELIGIBILITY */
+.ao-elig-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-top:48px;}
+.ao-elig-list{display:flex;flex-direction:column;gap:14px;}
+.ao-elig-item{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:var(--white);border-radius:var(--r-lg);border:1px solid var(--cream3);box-shadow:0 2px 10px rgba(30,45,82,.06);}
+.ao-elig-ico{width:40px;height:40px;border-radius:10px;background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.ao-elig-ico.warn{background:rgba(244,154,34,.1);border-color:rgba(244,154,34,.2);}
+.ao-elig-title{font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.ao-elig-desc{font-size:.81rem;font-weight:300;color:var(--ink-l);line-height:1.65;}
+.ao-pricing-card{background:linear-gradient(148deg,var(--navy) 0%,#0e2a1a 100%);border-radius:var(--r-xl);padding:36px;box-shadow:var(--sh-lg);position:sticky;top:80px;}
+.ao-pricing-card h3{font-family:var(--display);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:22px;}
+.ao-price-main{margin-bottom:24px;}
+.ao-price-from{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.4);margin-bottom:6px;}
+.ao-price-val{font-family:var(--display);font-size:3.5rem;font-weight:300;color:#fff;line-height:1;}
+.ao-price-val sup{font-size:1.5rem;color:var(--amber);}
+.ao-price-val sub{font-size:1.2rem;color:rgba(255,255,255,.5);}
+.ao-price-note{font-size:.76rem;font-weight:300;color:rgba(255,255,255,.45);margin-top:6px;line-height:1.6;}
+.ao-price-divider{height:1px;background:rgba(255,255,255,.08);margin:20px 0;}
+.ao-price-list{display:flex;flex-direction:column;gap:12px;}
+.ao-price-item{display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.ao-price-item-label{font-size:.82rem;font-weight:300;color:rgba(255,255,255,.6);}
+.ao-price-item-val{font-size:.88rem;font-weight:700;color:#fff;}
+.ao-price-item-val.green{color:rgba(74,222,128,.9);}
 
-/* BLOG TEASER */
-#blog-teaser{padding:130px 5%;background:var(--cream)}
-.blogs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.blog-card{background:var(--white);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--cream3);box-shadow:var(--sh);transition:var(--t)}
-.blog-card:hover{transform:translateY(-3px);box-shadow:var(--sh-lg);border-color:transparent}
-.blog-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:3rem}
-.bt1{background:linear-gradient(135deg,#1e2d52,#2e4070)}
-.bt2{background:linear-gradient(135deg,#1e3a2e,#2d5c40)}
-.bt3{background:linear-gradient(135deg,#4a1e1e,#7a3030)}
-.blog-body{padding:24px}
-.blog-cat{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--amber);margin-bottom:8px}
-.blog-body h3{font-family:var(--display);font-size:1.1rem;font-weight:500;color:var(--navy);margin-bottom:8px;line-height:1.35}
-.blog-body p{font-size:.83rem;font-weight:300;color:var(--ink-l);line-height:1.7;margin-bottom:16px}
-.blog-foot{display:flex;align-items:center;justify-content:space-between;font-size:.74rem;color:var(--ink-l);padding-top:14px;border-top:1px solid var(--cream3)}
-.blog-read{color:var(--navy);font-weight:700;transition:color .2s}
-.blog-read:hover{color:var(--amber)}
+/* COMPARISON TABLE */
+.ao-compare{margin-top:48px;overflow:hidden;border-radius:var(--r-xl);border:1px solid var(--cream3);box-shadow:var(--sh);}
+.ao-compare table{width:100%;border-collapse:collapse;}
+.ao-compare th{padding:16px 20px;text-align:left;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--navy-m);background:var(--cream2);border-bottom:1px solid var(--linen);}
+.ao-compare th:first-child{color:var(--navy);}
+.ao-compare td{padding:16px 20px;font-size:.85rem;border-bottom:1px solid var(--cream3);color:var(--ink);}
+.ao-compare tr:last-child td{border-bottom:none;}
+.ao-compare td:first-child{font-weight:600;color:var(--navy);}
+.ao-compare td.highlight{font-weight:700;color:var(--green);}
+.ao-compare td.mid{color:var(--amber);font-weight:600;}
+.ao-compare tr:hover td{background:var(--cream2);}
 
-/* CTA */
-#cta{padding:130px 5%;background:var(--cream2)}
-.cta-inner{background:var(--navy);border-radius:var(--r-xl);padding:88px 72px;text-align:center;position:relative;overflow:hidden}
-.cta-inner::before{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(244,154,34,.06);top:-150px;right:-100px;filter:blur(80px);pointer-events:none}
-.cta-inner h2{font-family:var(--display);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:300;color:#fff;margin:16px 0 14px;position:relative;z-index:1;line-height:1.18}
-.cta-inner p{color:rgba(255,255,255,.55);font-size:.95rem;font-weight:300;max-width:420px;margin:0 auto 36px;position:relative;z-index:1}
-.cta-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;position:relative;z-index:1}
-.cta-note{margin-top:20px;font-size:.74rem;color:rgba(255,255,255,.3);position:relative;z-index:1}
+/* ENQUIRY FORM */
+.ao-enquiry-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.ao-form-card{background:var(--white);border-radius:var(--r-xl);padding:40px 36px;box-shadow:var(--sh-lg);}
+.ao-form-title{font-family:var(--display);font-size:1.6rem;font-weight:400;color:var(--navy);margin-bottom:4px;}
+.ao-form-sub{font-size:.82rem;color:var(--ink-l);font-weight:300;margin-bottom:28px;}
+.ao-form{display:flex;flex-direction:column;gap:16px;}
+.ao-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.fg label{font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--navy-m);}
+.fg input,.fg select,.fg textarea{padding:11px 14px;border:1.5px solid var(--linen);border-radius:var(--r);font-family:var(--body);font-size:.88rem;color:var(--ink);background:var(--cream2);width:100%;transition:border .2s,box-shadow .2s;appearance:none;resize:vertical;}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--navy2);box-shadow:0 0 0 3px rgba(46,64,112,.08);background:var(--white);}
+.fg input::placeholder,.fg textarea::placeholder{color:#b8c0ce;font-weight:300;}
+.ao-info-side{padding:40px 0;}
+.ao-info-title{font-family:var(--display);font-size:1.8rem;font-weight:400;color:var(--navy);margin-bottom:12px;line-height:1.25;}
+.ao-info-p{font-size:.9rem;font-weight:300;color:var(--ink-l);line-height:1.85;margin-bottom:20px;}
+.ao-info-bullets{display:flex;flex-direction:column;gap:12px;margin-bottom:28px;}
+.ao-info-bullet{display:flex;align-items:flex-start;gap:12px;font-size:.86rem;font-weight:400;color:var(--ink);line-height:1.65;}
+.ao-info-bullet::before{content:'✓';color:var(--green);font-weight:700;flex-shrink:0;margin-top:1px;}
+.ao-success{display:none;text-align:center;padding:24px;}
+.ao-success-ico{font-size:3rem;margin-bottom:12px;}
+.ao-success-h{font-family:var(--display);font-size:1.5rem;font-weight:400;color:var(--navy);margin-bottom:8px;}
+.ao-success-p{font-size:.86rem;font-weight:300;color:var(--ink-l);line-height:1.7;}
 
-/* RESPONSIVE INDEX */
+/* FAQ */
+.ao-faq{display:flex;flex-direction:column;gap:0;margin-top:40px;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--cream3);}
+.ao-faq-item{border-bottom:1px solid var(--cream3);}
+.ao-faq-item:last-child{border-bottom:none;}
+.ao-faq-q{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;cursor:pointer;background:var(--white);transition:background .2s;gap:16px;}
+.ao-faq-q:hover{background:var(--cream2);}
+.ao-faq-q span{font-size:.92rem;font-weight:600;color:var(--navy);}
+.ao-faq-arrow{font-size:.8rem;color:var(--navy-m);transition:transform .3s;flex-shrink:0;}
+.ao-faq-item.open .ao-faq-arrow{transform:rotate(180deg);}
+.ao-faq-a{display:none;padding:0 24px 20px;font-size:.86rem;font-weight:300;color:var(--ink-l);line-height:1.75;}
+.ao-faq-item.open .ao-faq-a{display:block;}
+
+/* RESPONSIVE */
 @media(max-width:1024px){
-  .hero-inner,.about-grid,.ocean-grid,.webinar-wrap{grid-template-columns:1fr;gap:52px}
-  .hero-inner{text-align:left}
-  .steps{grid-template-columns:1fr 1fr}
-  .step:nth-child(2){border-left:none;border-top:none}
-  .step:nth-child(3){border-top:none;border-radius:0 0 0 var(--r-lg)}
-  .step:nth-child(4){border-left:none;border-top:none;border-radius:0 0 var(--r-lg) 0}
-  .step:first-child{border-radius:var(--r-lg) 0 0 0}
-  .step:nth-child(2){border-radius:0 var(--r-lg) 0 0}
+  .ao-hero-inner,.ao-elig-grid,.ao-enquiry-wrap{grid-template-columns:1fr;gap:52px;}
+  .ao-why-grid{grid-template-columns:1fr 1fr;}
+  .ao-pricing-card{position:static;}
+  .ao-stats{flex-wrap:wrap;}
 }
 @media(max-width:768px){
-  #hero{padding:100px 5% 60px}
-  .hero-stats{flex-direction:column;gap:1px}
-  .hero-h1{font-size:2.8rem}
-  .about-accent{position:static;margin-top:16px;display:inline-flex}
-  .blogs-grid{grid-template-columns:1fr}
-  .cta-inner{padding:52px 24px}
-  .cta-btns{flex-direction:column;align-items:center}
-  .steps{grid-template-columns:1fr}
-  .step{border-radius:0!important;border-left:1px solid var(--cream3)!important;border-top:none!important}
-  .step:first-child{border-top:1px solid var(--cream3)!important;border-radius:var(--r-lg) var(--r-lg) 0 0!important}
-  .step:last-child{border-radius:0 0 var(--r-lg) var(--r-lg)!important}
-  .webinar-wrap{padding:60px 0}
-  .wb-form-card{padding:24px 18px}
+  .ao-hero{padding:100px 5% 60px;}
+  .ao-why-grid{grid-template-columns:1fr;}
+  .ao-form-grid{grid-template-columns:1fr;}
+  .ao-stats{flex-direction:column;}
+  .ao-compare{overflow-x:auto;}
 }
 
 </style>
 </head>
 <body>
 <nav id="nav">
-  <a href="index.html" class="cur" class="nav-logo" aria-label="Xindus">
+  <a href="index.html" class="nav-logo" aria-label="Xindus">
     <span style="display:inline-flex;line-height:0"><svg style="height:34px;width:auto;display:block;" width="826" height="255" viewBox="0 0 826 255" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_2_489" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="826" height="255">
 <path d="M826 0H0V255H826V0Z" fill="#1e2d52"/>
@@ -792,9 +751,10 @@ footer{background:#141e34;padding:72px 5% 36px}
 </svg></span>
   </a>
   <div class="nav-links" id="navLinks">
-    <a href="index.html" class="cur">Home</a>
-    <a href="about.html">About</a>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
     <a href="index.html#ocean">Ocean 🆕</a>
+    <a href="air-ocean.html">Air-Ocean 🆥</a>
     <a href="calculators.html">Calculators</a>
     <a href="blogs.html">Blog</a>
     <a href="track.html">Track</a>
@@ -808,8 +768,8 @@ footer{background:#141e34;padding:72px 5% 36px}
 <div class="mob-overlay" id="overlay"></div>
 <div class="mob-menu" id="mobMenu">
   <button class="mob-close" id="mobClose">✕</button>
-  <a href="index.html" class="cur">🏠 Home</a>
-  <a href="about.html">📖 About</a>
+  <a href="index.html">🏠 Home</a>
+  <a href="index.html#about">📖 About</a>
   <a href="index.html#services">✈ Services</a>
   <a href="index.html#ocean">🚢 Ocean 🆕</a>
   <a href="calculators.html">🧮 Calculators</a>
@@ -819,251 +779,359 @@ footer{background:#141e34;padding:72px 5% 36px}
   <a href="index.html#cta" class="mob-cta">Get a Quote →</a>
 </div>
 
-<section id="hero">
-  <div class="hero-glow hg1"></div>
-  <div class="hero-glow hg2"></div>
-  <div class="hero-dots"></div>
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-eye">India's Premier Freight Platform</div>
-      <h1 class="hero-h1">Move Cargo<br><em>Smarter,</em><br>Faster.</h1>
-      <p class="hero-p">Air freight, courier and ocean logistics from New Delhi (DEL) — IGI Airport. Direct services to USA, UK, Australia & Canada. 200+ countries via India Post.</p>
-      <div class="hero-btns">
-        <a href="calculators.html" class="btn btn-amber">Calculate Rates →</a>
-        <a href="#services" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.2)">Explore Services</a>
+<!-- HERO -->
+<section class="ao-hero">
+  <div class="ao-hero-glow aog1"></div>
+  <div class="ao-hero-glow aog2"></div>
+  <div class="ao-hero-glow aog3"></div>
+  <div class="ao-dots"></div>
+  <div class="ao-hero-inner container">
+
+    <div>
+      <div class="ao-eye">New Hybrid Freight Service</div>
+      <h1 class="ao-h1">
+        India to USA<br>
+        via <em>Air + Ocean</em><br>
+        <span class="green-em">Hybrid Freight</span>
+      </h1>
+      <p class="ao-p">
+        The smartest way to ship bulk cargo to the United States. We fly your goods from India to Korea, then ship by ocean to the USA — combining the speed of air with the cost of sea.
+      </p>
+      <div class="ao-btns">
+        <a href="#enquiry" class="btn btn-amber">Enquire Now →</a>
+        <a href="#how-it-works" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.2)">See How It Works</a>
       </div>
-      <div class="hero-stats">
-        <div class="h-stat"><div class="h-num">150<sup style="font-size:1.2rem;color:var(--amber)">+</sup></div><div class="h-lbl">Countries</div></div>
-        <div class="h-stat"><div class="h-num">$2M<sup style="font-size:1.2rem;color:var(--amber)">+</sup></div><div class="h-lbl">Monthly Cargo</div></div>
-        <div class="h-stat"><div class="h-num">ISO</div><div class="h-lbl">Certified</div></div>
+      <div class="ao-stats">
+        <div class="ao-stat ao-stat-bg">
+          <div class="ao-sn">₹320<sup>+</sup></div>
+          <div class="ao-sl">Per kg (from)</div>
+        </div>
+        <div class="ao-stat ao-stat-bg">
+          <div class="ao-sn">20–25</div>
+          <div class="ao-sl">Business Days</div>
+        </div>
+        <div class="ao-stat ao-stat-bg">
+          <div class="ao-sn">1,000<sup>+</sup></div>
+          <div class="ao-sl">Kg minimum</div>
+        </div>
       </div>
     </div>
-    <div class="cov-card reveal">
-      <div class="cov-card-head"><div class="cov-card-icon">🌍</div><div><div class="cov-card-title">Where We Deliver</div><div class="cov-card-sub">Direct services & partnerships</div></div></div>
-      <div class="cov-sl">✈ Own Direct Service</div>
-      <div class="cov-countries">
-        <div class="cov-country"><div class="cov-flag">🇺🇸</div><div class="cov-name">United States</div><div class="cov-badge own-badge">Direct</div></div>
-        <div class="cov-country"><div class="cov-flag">🇬🇧</div><div class="cov-name">United Kingdom</div><div class="cov-badge own-badge">Direct</div></div>
-        <div class="cov-country"><div class="cov-flag">🇦🇺</div><div class="cov-name">Australia</div><div class="cov-badge own-badge">Direct</div></div>
-        <div class="cov-country"><div class="cov-flag">🇨🇦</div><div class="cov-name">Canada</div><div class="cov-badge own-badge">Direct</div></div>
-      </div>
-      <div class="cov-divider"></div>
-      <div class="cov-sl">🤝 Via India Post Partnership</div>
-      <div class="cov-partner">
-        <span class="cov-ptag">🌐 200+ Countries</span>
-        <span class="cov-ptag">📦 India Post Network</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="trust">
-  <div class="trust-inner">
-    <div class="ti">✅ ISO Certified</div><div class="ti-sep"></div>
-    <div class="ti">🌐 150+ Countries</div><div class="ti-sep"></div>
-    <div class="ti">📡 Real-time Tracking</div><div class="ti-sep"></div>
-    <div class="ti">⚡ Instant Quotes</div><div class="ti-sep"></div>
-    <div class="ti">🏭 MSME Ready</div><div class="ti-sep"></div>
-    <div class="ti">🛡 B2B &amp; B2C Expert</div>
-  </div>
-</section>
+    <!-- ROUTE CARD -->
+    <div>
+      <div class="ao-route-card reveal">
+        <div class="ao-route-title">Live Route Map</div>
+        <div class="ao-route-steps">
 
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-img-block">
-        <div class="about-main-card reveal">
-          <h3>Tech-Powered<br>Logistics from India</h3>
-          <p>Xindus Technologies Pvt. Ltd. is India's leading tech-first freight platform. We combine competitive rates, real-time visibility, and white-glove support to help B2B exporters, B2C brands, and SMEs move goods globally with confidence.</p>
-          <div class="about-stats">
-            <div class="a-stat"><div class="a-num">$2M+</div><div class="a-lbl">Monthly Cargo</div></div>
-            <div class="a-stat"><div class="a-num">150+</div><div class="a-lbl">Countries</div></div>
-            <div class="a-stat"><div class="a-num">5★</div><div class="a-lbl">Avg Rating</div></div>
-            <div class="a-stat"><div class="a-num">2hr</div><div class="a-lbl">Response Time</div></div>
+          <div class="ao-rs">
+            <div class="ao-rs-icon-wrap">
+              <div class="ao-rs-icon air">✈️</div>
+              <div class="ao-rs-line"></div>
+            </div>
+            <div class="ao-rs-content">
+              <div class="ao-rs-label">Origin</div>
+              <div class="ao-rs-place">🇮🇳 India</div>
+              <div class="ao-rs-detail">New Delhi / Mumbai / Chennai<br>Your goods picked up & consolidated</div>
+              <span class="ao-rs-time time-air">✈ Air Freight leg</span>
+            </div>
+          </div>
+
+          <div class="ao-rs">
+            <div class="ao-rs-icon-wrap">
+              <div class="ao-rs-icon hub">🔄</div>
+              <div class="ao-rs-line"></div>
+            </div>
+            <div class="ao-rs-content">
+              <div class="ao-rs-label">Transhipment Hub</div>
+              <div class="ao-rs-place">🇰🇷 Korea</div>
+              <div class="ao-rs-detail">Incheon / Busan port<br>Goods transferred to ocean vessel</div>
+              <span class="ao-rs-time time-hub">⚡ 3–5 days transit by air</span>
+            </div>
+          </div>
+
+          <div class="ao-rs">
+            <div class="ao-rs-icon-wrap">
+              <div class="ao-rs-icon sea">🚢</div>
+              <div class="ao-rs-line"></div>
+            </div>
+            <div class="ao-rs-content">
+              <div class="ao-rs-label">Ocean Freight</div>
+              <div class="ao-rs-place">🌊 Pacific Ocean</div>
+              <div class="ao-rs-detail">Korea → USA West Coast<br>Consolidated ocean freight</div>
+              <span class="ao-rs-time time-sea">🚢 20–25 days ocean transit</span>
+            </div>
+          </div>
+
+          <div class="ao-rs">
+            <div class="ao-rs-icon-wrap">
+              <div class="ao-rs-icon dest">🏁</div>
+            </div>
+            <div class="ao-rs-content">
+              <div class="ao-rs-label">Destination</div>
+              <div class="ao-rs-place">🇺🇸 United States</div>
+              <div class="ao-rs-detail">Los Angeles / Long Beach / Seattle<br>Customs clearance + final delivery</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="ao-total-badge">
+          <div>
+            <div class="ao-total-label">Total Transit Time</div>
+            <div class="ao-total-val">20–25 <span>business days</span></div>
+          </div>
+          <div style="text-align:right">
+            <div class="ao-total-label">Rate Starting From</div>
+            <div class="ao-total-val">₹320 <span>/kg</span></div>
           </div>
         </div>
-        <div class="about-accent reveal">
-          <div class="about-accent-n">DEL</div>
-          <div class="about-accent-l">IGI Airport Hub</div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="label-row"><div class="label-line"></div><div class="label-text">Who We Are</div></div>
-        <h2 class="s-title">Simplifying <em>Indian Exports</em> for the World</h2>
-        <p style="font-size:.92rem;font-weight:300;color:var(--ink-l);line-height:1.85;margin-bottom:20px">Founded to solve the complexity of international freight from India, Xindus combines competitive air and ocean rates with a digital-first approach — so you spend less time on logistics and more time growing your business.</p>
-        <p style="font-size:.92rem;font-weight:300;color:var(--ink-l);line-height:1.85;margin-bottom:28px">We serve B2B manufacturers, B2C e-commerce sellers, and SME exporters across textiles, electronics, handicrafts, pharmaceuticals, and more.</p>
-        <a href="calculators.html" class="btn btn-primary">Calculate Your Rate →</a>
       </div>
     </div>
   </div>
 </section>
 
-<section id="services">
+<!-- WHY AIR-OCEAN -->
+<section class="ao-section dark" id="how-it-works">
+  <div class="container">
+    <div class="reveal">
+      <div class="label-row"><div class="label-line"></div><div class="label-text">Why Choose Air-Ocean</div></div>
+      <h2 class="s-title" style="color:#fff;">The Sweet Spot Between <em style="color:rgba(245,184,74,.88)">Speed &amp; Cost</em></h2>
+      <p class="s-desc" style="color:rgba(255,255,255,.55);">Pure air freight is fast but expensive. Pure ocean is cheap but slow. Air-Ocean gives you the best of both — at a fraction of full air cost.</p>
+    </div>
+    <div class="ao-why-grid">
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">💰</div>
+        <h4>Up to 60% Cheaper Than Air</h4>
+        <p>Starting from ₹320/kg compared to ₹500–₹800/kg for full air freight. Massive savings on bulk shipments above 1,000 kg.</p>
+      </div>
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">⚡</div>
+        <h4>3× Faster Than Full Ocean</h4>
+        <p>Full ocean from India to USA takes 35–45 days. Our Air-Ocean hybrid cuts that to just 20–25 business days via the Korea fast corridor.</p>
+      </div>
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">🇰🇷</div>
+        <h4>Korea Fast Corridor</h4>
+        <p>Korea's Incheon and Busan ports are among the world's most efficient transhipment hubs — ensuring minimal delays and excellent vessel connections to the US West Coast.</p>
+      </div>
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">📦</div>
+        <h4>Ideal for Bulk Cargo</h4>
+        <p>Minimum 1,000 kg — perfect for B2B manufacturers, large e-commerce sellers and Amazon FBA shipments that need a smarter freight solution.</p>
+      </div>
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">📋</div>
+        <h4>One-Stop Documentation</h4>
+        <p>Xindus handles all paperwork — export customs in India, transhipment docs in Korea, and US import customs clearance at destination.</p>
+      </div>
+      <div class="ao-why-card reveal">
+        <div class="ao-why-ico">📡</div>
+        <h4>End-to-End Visibility</h4>
+        <p>Real-time tracking from India pickup through Korean hub to US delivery. One tracking number, full shipment visibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="ao-section white">
   <div class="container">
     <div class="s-head reveal">
-      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">What We Offer</div></div>
-      <h2 class="s-title" style="text-align:center">Our Freight <em>Services</em></h2>
-      <p class="s-desc">Every service departs from <strong>New Delhi (DEL) — IGI Airport</strong>. Tailored for B2B &amp; B2C exporters and SMEs.</p>
+      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Mode Comparison</div></div>
+      <h2 class="s-title" style="text-align:center">How Air-Ocean <em>Compares</em></h2>
+      <p class="s-desc">See how our hybrid service stacks up against full air and full ocean freight for India → USA shipments.</p>
     </div>
-    <div class="svc-note reveal">All shipments depart from <strong>New Delhi (DEL) — IGI Airport</strong>. Serving B2B exporters, B2C sellers &amp; SMEs.</div>
-
-    <!-- USA -->
-    <div class="svc-country-block reveal">
-      <div class="scb-header"><div class="scb-flag">🇺🇸</div><div class="scb-title">United States</div><div class="scb-tag">Own Direct Service</div></div>
-      <div class="svc-grid">
-        <div class="svc-card"><div class="svc-ico">✈️</div><div class="svc-tag svc-tag-lite">Xindus Lite</div><h3>USA Lite</h3><p>Economy air courier. Best value for non-urgent B2B and B2C shipments.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 10–15 business days</span><span class="svc-meta-item">📦 Up to 100 kg</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-        <div class="svc-card"><div class="svc-ico">🚀</div><div class="svc-tag svc-tag-premium">Xindus Express</div><h3>USA Express</h3><p>Priority air courier for time-sensitive B2B and B2C cargo.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 7–10 business days</span><span class="svc-meta-item">📦 Up to 10 kg</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-      </div>
-    </div>
-
-    <!-- UK -->
-    <div class="svc-country-block reveal">
-      <div class="scb-header"><div class="scb-flag">🇬🇧</div><div class="scb-title">United Kingdom</div><div class="scb-tag">Own Direct Service</div></div>
-      <div class="svc-grid">
-        <div class="svc-card"><div class="svc-ico">✈️</div><div class="svc-tag svc-tag-lite">UK Lite</div><h3>UK Lite</h3><p>Economy courier to the UK. Ideal for B2C parcels and SME exports.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 10–12 business days</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-        <div class="svc-card"><div class="svc-ico">🚀</div><div class="svc-tag svc-tag-premium">UK Xpress</div><h3>UK Xpress</h3><p>Priority courier to the UK with faster transit.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 6–8 business days</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-        <div class="svc-card"><div class="svc-ico">🏭</div><div class="svc-tag svc-tag-premium">FBA</div><h3>UK Lite FBA</h3><p>Dedicated Amazon FBA sellers — direct to UK fulfilment centres.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 10–12 business days</span><span class="svc-meta-item">🏭 Amazon FBA</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-      </div>
-    </div>
-
-    <!-- Canada -->
-    <div class="svc-country-block reveal">
-      <div class="scb-header"><div class="scb-flag">🇨🇦</div><div class="scb-title">Canada</div><div class="scb-tag">Own Direct Service</div></div>
-      <div class="svc-grid">
-        <div class="svc-card"><div class="svc-ico">✈️</div><div class="svc-tag svc-tag-lite">Canada Lite</div><h3>Canada Lite</h3><p>Economy air courier for B2B and B2C shipments to Canada.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 8–10 business days</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-      </div>
-    </div>
-
-    <!-- Australia -->
-    <div class="svc-country-block reveal">
-      <div class="scb-header"><div class="scb-flag">🇦🇺</div><div class="scb-title">Australia</div><div class="scb-tag">Own Direct Service</div></div>
-      <div class="svc-grid">
-        <div class="svc-card"><div class="svc-ico">✈️</div><div class="svc-tag svc-tag-premium">Xindus Xpress</div><h3>Australia Xpress</h3><p>Fast direct courier to Australia for B2B and B2C exporters.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 10–12 business days</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-      </div>
-    </div>
-
-    <!-- Others -->
-    <div class="svc-country-block reveal">
-      <div class="scb-header"><div class="scb-flag">🌐</div><div class="scb-title">200+ Other Countries</div><div class="scb-tag scb-tag-partner">Via India Post</div></div>
-      <div class="svc-grid">
-        <div class="svc-card"><div class="svc-ico">📮</div><div class="svc-tag svc-tag-lite">ITPS</div><h3>India Post ITPS</h3><p>Tracked postal service to 200+ countries via our India Post partnership.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 10–15 business days</span><span class="svc-meta-item">🌐 200+ countries</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-        <div class="svc-card"><div class="svc-ico">⚡</div><div class="svc-tag svc-tag-premium">EMS</div><h3>India Post EMS</h3><p>Express Mail Service via India Post. Priority handling and full tracking.</p><div class="svc-meta"><span class="svc-meta-item">⏱ 8–10 business days</span><span class="svc-meta-item">🌐 200+ countries</span></div><a href="calculators.html" class="svc-link">Calculate Rate →</a></div>
-      </div>
+    <div class="ao-compare reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Factor</th>
+            <th>✈ Full Air</th>
+            <th style="background:#f0fdf4;color:#15803d">✈🚢 Air-Ocean (Xindus)</th>
+            <th>🚢 Full Ocean</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Transit Time</td>
+            <td>7–10 days</td>
+            <td class="highlight">20–25 business days</td>
+            <td>35–45 days</td>
+          </tr>
+          <tr>
+            <td>Rate (approx.)</td>
+            <td>₹500–800/kg</td>
+            <td class="highlight">From ₹320/kg</td>
+            <td>₹200–280/kg</td>
+          </tr>
+          <tr>
+            <td>Minimum Weight</td>
+            <td>No minimum</td>
+            <td class="mid">1,000 kg</td>
+            <td>No minimum (LCL)</td>
+          </tr>
+          <tr>
+            <td>Best For</td>
+            <td>Urgent, light cargo</td>
+            <td class="highlight">Bulk B2B, large FBA</td>
+            <td>Very heavy, non-urgent</td>
+          </tr>
+          <tr>
+            <td>Customs Handling</td>
+            <td>India only</td>
+            <td class="highlight">India + Korea + USA</td>
+            <td>India + USA</td>
+          </tr>
+          <tr>
+            <td>Tracking</td>
+            <td>Full real-time</td>
+            <td class="highlight">Full real-time</td>
+            <td>Port-to-port only</td>
+          </tr>
+          <tr>
+            <td>Cost Saving vs Air</td>
+            <td>—</td>
+            <td class="highlight">Up to 60% cheaper</td>
+            <td>Up to 70% cheaper</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<section id="how">
+<!-- ELIGIBILITY & PRICING -->
+<section class="ao-section cream" id="pricing">
   <div class="container">
     <div class="s-head reveal">
-      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Process</div></div>
-      <h2 class="s-title" style="text-align:center">How It <em>Works</em></h2>
+      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Eligibility & Pricing</div></div>
+      <h2 class="s-title" style="text-align:center">Who Is This <em>Service For?</em></h2>
     </div>
-    <div class="steps reveal">
-      <div class="step"><div class="step-n">01</div><h4>Get a Quote</h4><p>Use our rate calculator for instant pricing. Enter weight, dimensions and destination.</p></div>
-      <div class="step"><div class="step-n">02</div><h4>Book & Handover</h4><p>Confirm your booking online. Our team picks up from your location in Delhi.</p></div>
-      <div class="step"><div class="step-n">03</div><h4>Customs & Dispatch</h4><p>We handle all documentation and customs clearance at IGI Airport.</p></div>
-      <div class="step"><div class="step-n">04</div><h4>Track & Deliver</h4><p>Real-time tracking at every milestone. Delivered to your buyer's door.</p></div>
+    <div class="ao-elig-grid">
+      <div>
+        <div class="ao-elig-list">
+          <div class="ao-elig-item reveal">
+            <div class="ao-elig-ico">📦</div>
+            <div><div class="ao-elig-title">Minimum 1,000 kg per shipment</div><div class="ao-elig-desc">This service is optimised for bulk cargo. The economics work best at 1,000 kg and above — giving you maximum cost savings over full air freight.</div></div>
+          </div>
+          <div class="ao-elig-item reveal">
+            <div class="ao-elig-ico">🏭</div>
+            <div><div class="ao-elig-title">B2B Manufacturers & Exporters</div><div class="ao-elig-desc">Textile mills, electronics manufacturers, handicraft exporters, pharmaceutical companies — anyone shipping regular bulk consignments to the USA.</div></div>
+          </div>
+          <div class="ao-elig-item reveal">
+            <div class="ao-elig-ico">🛒</div>
+            <div><div class="ao-elig-title">Large E-Commerce & Amazon FBA Sellers</div><div class="ao-elig-desc">FBA inventory replenishment, D2C brand warehousing in the US — if you're sending large batches regularly, this cuts your logistics cost significantly.</div></div>
+          </div>
+          <div class="ao-elig-item reveal">
+            <div class="ao-elig-ico warn">⏱</div>
+            <div><div class="ao-elig-title">Not Urgent, But Not Slow</div><div class="ao-elig-desc">You need your cargo in the USA within 30 business days — not 7 days (air) and not 45 days (full ocean). This is your service.</div></div>
+          </div>
+          <div class="ao-elig-item reveal">
+            <div class="ao-elig-ico warn">🚫</div>
+            <div><div class="ao-elig-title">Not for Dangerous Goods</div><div class="ao-elig-desc">Lithium batteries, flammables and hazmat require special handling. Contact us for a custom solution for restricted commodities.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="ao-pricing-card">
+          <h3>Pricing Overview</h3>
+          <div class="ao-price-main">
+            <div class="ao-price-from">Rate starts from</div>
+            <div class="ao-price-val">₹320<sub>/kg</sub></div>
+            <div class="ao-price-note">Final rate depends on commodity, exact weight, dimensions and pickup location. All rates are for chargeable weight.</div>
+          </div>
+          <div class="ao-price-divider"></div>
+          <div class="ao-price-list">
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">Minimum shipment</span>
+              <span class="ao-price-item-val">1,000 kg</span>
+            </div>
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">Transit time</span>
+              <span class="ao-price-item-val green">20–25 business days</span>
+            </div>
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">Route</span>
+              <span class="ao-price-item-val">India → Korea → USA</span>
+            </div>
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">Destination ports</span>
+              <span class="ao-price-item-val">LA, Long Beach, Seattle</span>
+            </div>
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">Customs included</span>
+              <span class="ao-price-item-val green">India export + US import</span>
+            </div>
+            <div class="ao-price-item">
+              <span class="ao-price-item-label">GST</span>
+              <span class="ao-price-item-val">18% applicable</span>
+            </div>
+          </div>
+          <div class="ao-price-divider"></div>
+          <a href="#enquiry" class="btn btn-amber" style="width:100%;justify-content:center;padding:14px;margin-bottom:10px">Get a Custom Quote →</a>
+          <p style="font-size:.72rem;color:rgba(255,255,255,.4);text-align:center;font-weight:300">Our team responds within 2 business hours</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="ocean">
+<!-- ENQUIRY FORM -->
+<section class="ao-section white" id="enquiry">
   <div class="container">
-    <div class="ocean-grid">
-      <div class="reveal">
-        <div class="label-row"><div class="label-line"></div><div class="label-text">New Service — Launched Today</div></div>
-        <h2 class="s-title">India's Tech-Powered<br><em>Ocean Freight</em></h2>
-        <p class="s-desc">We're expanding beyond the skies. Xindus now offers FCL and LCL ocean freight from India's major ports — same real-time visibility, now on the seas.</p>
-        <div class="ocean-features">
-          <div class="ocean-feat"><div class="of-ico">🚢</div><div><div class="of-title">FCL &amp; LCL Options</div><div class="of-desc">Full and shared containers from JNPT, Mundra, Chennai &amp; Kolkata</div></div></div>
-          <div class="ocean-feat"><div class="of-ico">📡</div><div><div class="of-title">Real-time Vessel Tracking</div><div class="of-desc">Live tracking dashboard same as our air service</div></div></div>
-          <div class="ocean-feat"><div class="of-ico">📋</div><div><div class="of-title">End-to-End Documentation</div><div class="of-desc">BL, packing list, customs and port clearance by our in-house team</div></div></div>
-          <div class="ocean-feat"><div class="of-ico">💡</div><div><div class="of-title">B2B &amp; B2C Ready</div><div class="of-desc">From B2C brands and SMEs to large B2B manufacturers</div></div></div>
+    <div class="ao-enquiry-wrap">
+      <div class="ao-info-side reveal">
+        <div class="label-row"><div class="label-line"></div><div class="label-text">Get a Quote</div></div>
+        <h2 class="ao-info-title">Ready to Ship<br>India → Korea → USA?</h2>
+        <p class="ao-info-p">Fill in the form and our Air-Ocean freight specialist will get back to you within 2 business hours with a detailed quote and transit plan.</p>
+        <div class="ao-info-bullets">
+          <div class="ao-info-bullet">Competitive rates from ₹320/kg</div>
+          <div class="ao-info-bullet">No hidden charges — full quote upfront</div>
+          <div class="ao-info-bullet">Real-time tracking throughout</div>
+          <div class="ao-info-bullet">One-stop documentation for India, Korea &amp; USA</div>
+          <div class="ao-info-bullet">Minimum 1,000 kg per shipment</div>
         </div>
-        <div class="ocean-stats">
-          <div class="o-stat"><div class="o-stat-n">80+</div><div class="o-stat-l">Destination Ports</div></div>
-          <div class="o-stat"><div class="o-stat-n">25–35</div><div class="o-stat-l">Days Transit (avg)</div></div>
-        </div>
-        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
-          <a href="#cta" class="btn btn-primary">Enquire About Ocean →</a>
-          <a href="#cta" class="btn btn-ghost">Talk to an Expert</a>
+        <div style="background:var(--cream2);border-radius:var(--r-lg);padding:20px 22px;border:1px solid var(--linen);">
+          <div style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--navy-m);margin-bottom:10px;">Contact Directly</div>
+          <div style="font-size:.88rem;font-weight:400;color:var(--navy);margin-bottom:6px;">📧 hello@xindus.net</div>
+          <div style="font-size:.82rem;font-weight:300;color:var(--ink-l);">Mention "Air-Ocean" in your subject line</div>
         </div>
       </div>
       <div class="reveal">
-        <div class="ocean-card">
-          <div class="ocean-card-icon">🚢</div>
-          <div class="ocean-card-title">Ocean Freight — Now Live</div>
-          <div class="ocean-card-sub">From India's major ports to 80+ global destinations</div>
-          <div class="ocean-routes">
-            <div class="ocean-route"><div class="or-port">🇮🇳 JNPT, Mumbai</div><div class="or-arr">→</div><div class="or-dest">🇺🇸 Los Angeles / New York</div></div>
-            <div class="ocean-route"><div class="or-port">🇮🇳 Mundra, Gujarat</div><div class="or-arr">→</div><div class="or-dest">🇬🇧 Felixstowe, UK</div></div>
-            <div class="ocean-route"><div class="or-port">🇮🇳 Chennai Port</div><div class="or-arr">→</div><div class="or-dest">🇦🇺 Sydney / Melbourne</div></div>
-          </div>
-          <div class="ocean-badges">
-            <div class="o-badge">🟢 FCL Available</div>
-            <div class="o-badge">🟢 LCL Available</div>
-            <div class="o-badge">⭐ New Service</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="webinar">
-  <div class="container">
-    <div class="webinar-wrap">
-      <div class="reveal">
-        <div class="wb-badge">🎙 Live Webinar — Starting Next Week</div>
-        <h2 class="wb-h2">Export to the USA:<br><em>Air vs Ocean</em><br>Free Expert Webinar</h2>
-        <p class="wb-p">Whether you're a B2B manufacturer or a B2C seller — join our live session to get expert answers on shipping to the United States via air or ocean freight. Learn which mode suits your product, budget, and timeline.</p>
-        <div class="wb-topics">
-          <div class="wb-topic"><span class="wb-dot"></span>Air vs Ocean to USA — transit times, costs &amp; trade-offs</div>
-          <div class="wb-topic"><span class="wb-dot"></span>US import duties, tariffs and compliance for Indian exporters</div>
-          <div class="wb-topic"><span class="wb-dot"></span>Packaging, documentation &amp; customs best practices</div>
-          <div class="wb-topic"><span class="wb-dot"></span>Live Q&amp;A with Xindus logistics experts</div>
-        </div>
-        <div class="wb-meta">
-          <div class="wb-meta-item">📅 <strong>Next Week</strong> — Date to be announced</div>
-          <div class="wb-meta-item">⏱ <strong>60 minutes</strong> · Free to attend</div>
-          <div class="wb-meta-item">🎯 <strong>B2C Sellers &amp; B2B Exporters</strong> · USA Focused</div>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="wb-form-card">
-          <div class="wb-form-title">Reserve Your Spot</div>
-          <div class="wb-form-sub">Free registration · Limited seats available</div>
-          <form class="wb-form" onsubmit="submitWebinar(event)">
-            <div class="fg"><label>Full Name *</label><input type="text" id="wb-name" placeholder="Your full name" required/></div>
-            <div class="fg"><label>Business Email *</label><input type="email" id="wb-email" placeholder="you@company.com" required/></div>
-            <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" id="wb-phone" placeholder="+91 98765 43210" required/></div>
-            <div class="fg"><label>Business Type *</label>
-              <select id="wb-type" required>
-                <option value="">Select your business type…</option>
-                <option value="b2c">B2C — E-commerce / D2C Brand</option>
-                <option value="b2b-mfg">B2B — Manufacturer / Exporter</option>
-                <option value="b2b-trader">B2B — Trader / Wholesaler</option>
-                <option value="msme">MSME Exporter</option>
-                <option value="other">Other</option>
-              </select>
+        <div class="ao-form-card">
+          <div class="ao-form-title">Enquiry Form</div>
+          <div class="ao-form-sub">Tell us about your shipment — we'll do the rest</div>
+          <form class="ao-form" onsubmit="submitAO(event)">
+            <div class="ao-form-grid">
+              <div class="fg"><label>Full Name *</label><input type="text" id="ao-name" placeholder="Your name" required/></div>
+              <div class="fg"><label>Company Name</label><input type="text" id="ao-company" placeholder="Your company"/></div>
             </div>
-            <div class="fg"><label>Preferred Shipping Mode</label>
-              <select id="wb-mode">
-                <option value="">Select…</option>
-                <option value="air">Air Freight</option>
-                <option value="ocean">Ocean Freight</option>
-                <option value="both">Both / Not Sure Yet</option>
-              </select>
+            <div class="ao-form-grid">
+              <div class="fg"><label>Email *</label><input type="email" id="ao-email" placeholder="you@company.com" required/></div>
+              <div class="fg"><label>Phone / WhatsApp *</label><input type="tel" id="ao-phone" placeholder="+91 98765 43210" required/></div>
             </div>
-            <div class="fg"><label>Your Question (optional)</label><textarea id="wb-query" placeholder="What's your biggest question about exporting to the USA?" rows="3"></textarea></div>
-            <button type="submit" class="btn btn-amber" style="width:100%;justify-content:center;padding:14px">Register Free →</button>
-            <p class="wb-privacy">🔒 Your details are safe. No spam, ever.</p>
+            <div class="fg"><label>Commodity / Product *</label><input type="text" id="ao-product" placeholder="e.g. Textile garments, Electronic components, Handicrafts…" required/></div>
+            <div class="ao-form-grid">
+              <div class="fg"><label>Estimated Weight (kg) *</label><input type="number" id="ao-weight" placeholder="e.g. 2000" min="1000" required/><div style="font-size:.72rem;color:var(--ink-l);margin-top:3px">Minimum 1,000 kg</div></div>
+              <div class="fg"><label>Shipment Frequency</label>
+                <select id="ao-freq">
+                  <option value="">Select…</option>
+                  <option value="one-time">One-time shipment</option>
+                  <option value="monthly">Monthly</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="quarterly">Quarterly</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg"><label>Origin City in India</label><input type="text" id="ao-origin" placeholder="e.g. Delhi, Mumbai, Surat, Bangalore…"/></div>
+            <div class="fg"><label>US Destination (port or city)</label><input type="text" id="ao-dest" placeholder="e.g. Los Angeles, New York, Seattle…"/></div>
+            <div class="fg"><label>Any Additional Requirements</label><textarea id="ao-notes" placeholder="Special handling, packaging needs, deadlines, questions…" rows="3"></textarea></div>
+            <button type="submit" class="btn btn-amber" style="width:100%;justify-content:center;padding:14px;font-size:.92rem">Submit Enquiry →</button>
+            <p style="font-size:.72rem;color:var(--ink-l);text-align:center;margin-top:4px;font-weight:300">🔒 Your details are safe. We respond within 2 business hours.</p>
           </form>
-          <div class="wb-success" id="wb-success">
-            <div class="wb-success-ico">🎉</div>
-            <div class="wb-success-h">You're Registered!</div>
-            <div class="wb-success-p">We'll send the webinar link and a reminder 24 hours before. Check your email.</div>
+          <div class="ao-success" id="ao-success">
+            <div class="ao-success-ico">🎉</div>
+            <div class="ao-success-h">Enquiry Received!</div>
+            <div class="ao-success-p">Our Air-Ocean freight specialist will contact you within 2 business hours with a detailed quote. Check your email and WhatsApp.</div>
           </div>
         </div>
       </div>
@@ -1071,32 +1139,38 @@ footer{background:#141e34;padding:72px 5% 36px}
   </div>
 </section>
 
-<section id="blog-teaser">
+<!-- FAQ -->
+<section class="ao-section cream">
   <div class="container">
     <div class="s-head reveal">
-      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Knowledge Hub</div></div>
-      <h2 class="s-title" style="text-align:center">Freight Insights &amp; <em>Industry News</em></h2>
+      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Common Questions</div></div>
+      <h2 class="s-title" style="text-align:center">Frequently Asked <em>Questions</em></h2>
     </div>
-    <div class="blogs-grid">
-      <div class="blog-card reveal"><div class="blog-thumb bt1">✈️</div><div class="blog-body"><div class="blog-cat">Air Freight</div><h3>Air vs Ocean: Which is Right for Your US Shipment?</h3><p>A practical guide for B2B and B2C exporters on choosing the right freight mode for exports to the USA.</p><div class="blog-foot"><span>Apr 2025 · 8 min</span><a href="blogs.html" class="blog-read">Read →</a></div></div></div>
-      <div class="blog-card reveal"><div class="blog-thumb bt2">📋</div><div class="blog-body"><div class="blog-cat">Customs</div><h3>Understanding US Import Duties for Indian Exporters</h3><p>A comprehensive breakdown of Section 301 tariffs, reciprocal duties and how they affect your margins.</p><div class="blog-foot"><span>Mar 2025 · 6 min</span><a href="blogs.html" class="blog-read">Read →</a></div></div></div>
-      <div class="blog-card reveal"><div class="blog-thumb bt3">🌐</div><div class="blog-body"><div class="blog-cat">Trade Policy</div><h3>India Post ITPS vs EMS — Which Service Should You Choose?</h3><p>Comparing two major India Post international services for SME and B2C exporters shipping to 200+ countries.</p><div class="blog-foot"><span>Mar 2025 · 7 min</span><a href="blogs.html" class="blog-read">Read →</a></div></div></div>
-    </div>
-    <div style="text-align:center;margin-top:36px"><a href="blogs.html" class="btn btn-ghost">View All Articles →</a></div>
-  </div>
-</section>
-
-<section id="cta">
-  <div class="container">
-    <div class="cta-inner reveal">
-      <div class="label-row" style="justify-content:center"><div class="label-line"></div><div class="label-text">Get Started</div></div>
-      <h2>Ready to Ship<br>Smarter?</h2>
-      <p>Get an instant quote or speak with our freight experts. We respond within 2 hours on business days.</p>
-      <div class="cta-btns">
-        <a href="calculators.html" class="btn btn-amber">Calculate Rates →</a>
-        <a href="mailto:hello@xindus.net" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.2)">📧 Email Us</a>
+    <div class="ao-faq reveal">
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>Why does the cargo go to Korea first?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">Korea's Incheon and Busan ports are strategic transhipment hubs with excellent connectivity to the US West Coast. Flying goods to Korea first is significantly cheaper than flying directly to the USA, and Korean ports offer faster ocean transit to Los Angeles and Long Beach than most other Asian hubs.</div>
       </div>
-      <div class="cta-note">No commitment required · B2B, B2C &amp; SME exporters welcome</div>
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>What is the exact breakdown of the 20–25 day transit?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">India pickup + export customs: 1–2 days. Air freight India → Korea: 3–5 days. Korean port handling + vessel loading: 2–3 days. Ocean transit Korea → US West Coast: 14–18 days. US customs clearance + final delivery: 3–5 days. Total: 20–25 business days.</div>
+      </div>
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>Is there a maximum weight limit?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">No maximum weight. The service scales — whether you're shipping 1,000 kg or 50,000 kg, we can handle it. For very large shipments we may arrange dedicated container loads (FCL) from Korea to the USA for additional savings.</div>
+      </div>
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>Can I track my shipment throughout the journey?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">Yes. You receive a single Xindus tracking number that covers the entire journey — India pickup → Korean hub → ocean transit → US delivery. Real-time updates are sent via email and WhatsApp at every major milestone.</div>
+      </div>
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>Are US import duties and customs clearance included?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">US customs clearance handling is included in our service. However, the actual import duties (tariffs) are payable by the importer of record in the USA. Our duty calculator can help you estimate US import duties for your specific HS code before shipping.</div>
+      </div>
+      <div class="ao-faq-item">
+        <div class="ao-faq-q" onclick="toggleFaq(this)"><span>What types of goods can I ship?</span><div class="ao-faq-arrow">▼</div></div>
+        <div class="ao-faq-a">Most general cargo including textiles, garments, electronics (non-lithium), handicrafts, auto parts, furniture, machinery, food products (non-perishable), and more. Dangerous goods, lithium batteries, and certain restricted commodities require special handling — contact us to discuss.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1613,7 +1687,7 @@ footer{background:#141e34;padding:72px 5% 36px}
         <li><a href="track.html">Shipment Tracker</a></li>
       </ul></div>
       <div class="footer-col"><h5>Company</h5><ul>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="index.html#about">About Us</a></li>
         <li><a href="blogs.html">Blog</a></li>
         <li><a href="mailto:hello@xindus.net">Contact Us</a></li>
         <li><a href="index.html#webinar">Free Webinar</a></li>
@@ -1643,16 +1717,30 @@ const ro=new IntersectionObserver(entries=>entries.forEach((e,i)=>{if(e.isInters
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
 
-function submitWebinar(e) {
+function submitAO(e) {
   e.preventDefault();
-  const n=document.getElementById('wb-name').value.trim();
-  const em=document.getElementById('wb-email').value.trim();
-  const ph=document.getElementById('wb-phone').value.trim();
-  const ty=document.getElementById('wb-type').value;
-  if(!n||!em||!ph||!ty){alert('Please fill all required fields.');return;}
-  document.querySelector('.wb-form').style.display='none';
-  document.getElementById('wb-success').style.display='block';
-  console.log('Webinar lead:',{n,em,ph,ty,mode:document.getElementById('wb-mode').value,q:document.getElementById('wb-query').value});
+  const name  = document.getElementById('ao-name').value.trim();
+  const email = document.getElementById('ao-email').value.trim();
+  const phone = document.getElementById('ao-phone').value.trim();
+  const wt    = document.getElementById('ao-weight').value;
+  const prod  = document.getElementById('ao-product').value.trim();
+  if (!name || !email || !phone || !prod) { alert('Please fill all required fields.'); return; }
+  if (+wt < 1000) { alert('Minimum shipment weight is 1,000 kg for this service.'); return; }
+  document.querySelector('.ao-form').style.display = 'none';
+  document.getElementById('ao-success').style.display = 'block';
+  console.log('Air-Ocean enquiry:', {name, email, phone, product:prod, weight:wt,
+    company: document.getElementById('ao-company').value,
+    freq: document.getElementById('ao-freq').value,
+    origin: document.getElementById('ao-origin').value,
+    dest: document.getElementById('ao-dest').value,
+    notes: document.getElementById('ao-notes').value });
+}
+
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.ao-faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
 }
 
 </script>
